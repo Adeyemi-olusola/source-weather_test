@@ -22,12 +22,12 @@ To get started with this project, follow the instructions below.
 - A code editor such as Visual Studio Code or Android Studio.
 - A device or emulator to run the app.
 
-### Installation
+### Installation 
 
 1. **Clone the repository:**
 
     ```bash
-    git clone https://github.com/yourusername/weather_app.git
+    git clone https://github.com/Adeyemi-olusola/weather_app.git
     cd weather_app
     ```
 
