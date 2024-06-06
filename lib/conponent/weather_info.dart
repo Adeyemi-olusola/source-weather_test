@@ -20,8 +20,10 @@ class WeatherInfo extends StatelessWidget {
     }
   }
 
-    String _getWeatherImage(String description) {
-    if (description.contains('rain')) {
+  String _getWeatherImage(String description) {
+    if (description.contains('light rain')) {
+      return 'assets/images/icons8-partly-cloudy-day-48.png';
+    } else if (description.contains('rain')) {
       return 'assets/images/icons8-rainfall.gif';
     } else if (description.contains('cloud')) {
       return 'assets/images/icons8-partly-cloudy-day-48.png';
@@ -56,7 +58,9 @@ class WeatherInfo extends StatelessWidget {
             //   size: 64,
             // ),
 
-            Image.asset( _getWeatherImage(weatherData['weather'][0]['description']),),
+            Image.asset(
+              _getWeatherImage(weatherData['weather'][0]['description']),
+            ),
             Text(
               '${weatherData['main']['temp']} °C',
               style: AppTextStyles.bodyText.copyWith(

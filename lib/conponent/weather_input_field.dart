@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:weather_app_test/utils/textstyles.dart';
 
 class WeatherInputField extends StatelessWidget {
   final TextEditingController controller;
@@ -11,7 +12,9 @@ class WeatherInputField extends StatelessWidget {
     return TextField(
       controller: controller,
       onSubmitted: onSearch,
+      style:AppTextStyles.bodyText ,
       decoration: InputDecoration(
+        
         labelText: 'Enter city name',
         suffixIcon: IconButton(
           icon: Icon(Icons.search),
